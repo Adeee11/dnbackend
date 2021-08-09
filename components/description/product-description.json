@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_description_product_descriptions",
+  "info": {
+    "name": "product_description",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "about": {
+      "type": "component",
+      "repeatable": false,
+      "component": "description.about"
+    }
+  }
+}

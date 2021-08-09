@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Products",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_brand_name": {
+      "type": "string"
+    },
+    "product_name": {
+      "type": "string"
+    },
+    "product_size": {
+      "type": "string"
+    },
+    "product_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "product_available_quantity": {
+      "type": "biginteger"
+    },
+    "product_mrp": {
+      "type": "float"
+    },
+    "product_discount": {
+      "type": "decimal"
+    },
+    "product_type": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "veg",
+        "nonveg"
+      ]
+    },
+    "product_count": {
+      "type": "biginteger"
+    },
+    "product_description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "description.product-description"
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "products",
+      "dominant": true
+    }
+  }
+}
