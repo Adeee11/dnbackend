@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "Products",
-    "description": ""
+    "name": "Products"
   },
   "options": {
     "increments": true,
@@ -12,15 +11,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "product_brand_name": {
-      "type": "string"
-    },
-    "product_name": {
-      "type": "string"
-    },
-    "product_size": {
-      "type": "string"
-    },
     "product_image": {
       "model": "file",
       "via": "related",
@@ -33,35 +23,26 @@
       "required": false,
       "pluginOptions": {}
     },
-    "product_available_quantity": {
-      "type": "biginteger"
+    "product_name": {
+      "type": "string"
     },
-    "product_mrp": {
-      "type": "float"
-    },
-    "product_discount": {
+    "product_price": {
       "type": "decimal"
     },
-    "product_type": {
-      "type": "enumeration",
-      "enum": [
-        "none",
-        "veg",
-        "nonveg"
-      ]
-    },
-    "product_count": {
-      "type": "biginteger"
-    },
     "product_description": {
-      "type": "component",
-      "repeatable": false,
-      "component": "description.product-description"
+      "type": "text"
+    },
+    "size": {
+      "type": "json"
     },
     "categories": {
-      "collection": "categories",
-      "via": "products",
-      "dominant": true
+      "type": "enumeration",
+      "enum": [
+        "discounted_product",
+        "latest_product",
+        "grocery_staples",
+        "kitchen_essentials"
+      ]
     }
   }
 }

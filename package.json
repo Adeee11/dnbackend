@@ -1,5 +1,5 @@
 {
-  "name": "dnbackend",
+  "name": "daily-needz",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -11,24 +11,28 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "strapi": "3.6.6",
-    "strapi-admin": "3.6.6",
-    "strapi-utils": "3.6.6",
-    "strapi-plugin-content-type-builder": "3.6.6",
-    "strapi-plugin-content-manager": "3.6.6",
-    "strapi-plugin-users-permissions": "3.6.6",
-    "strapi-plugin-email": "3.6.6",
-    "strapi-plugin-upload": "3.6.6",
-    "strapi-plugin-i18n": "3.6.6",
-    "strapi-connector-bookshelf": "3.6.6",
+    "dotenv": "^10.0.0",
+    "find-config": "^1.0.0",
     "knex": "0.21.18",
-    "pg": "8.5.1"
+    "sqlite3": "5.0.0",
+    "strapi": "3.6.8",
+    "strapi-admin": "3.6.8",
+    "strapi-connector-bookshelf": "3.6.8",
+    "strapi-plugin-content-manager": "3.6.8",
+    "strapi-plugin-content-type-builder": "3.6.8",
+    "strapi-plugin-email": "3.6.8",
+    "strapi-plugin-i18n": "3.6.8",
+    "strapi-plugin-upload": "3.6.8",
+    "strapi-plugin-users-permissions": "3.6.8",
+    "strapi-utils": "3.6.8",
+    "stripe": "^8.175.0"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "b449777a-f24e-487d-9075-c44ef89915ea"
+    "uuid": "e492a410-d64d-41d2-acea-bf247905e101",
+    "template": "https://github.com/strapi/strapi-template-ecommerce"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",

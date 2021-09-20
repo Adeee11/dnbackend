@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "orders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Product_name": {
+      "type": "string"
+    },
+    "Size": {
+      "type": "string"
+    },
+    "Quantity": {
+      "type": "string"
+    },
+    "Buyer_email": {
+      "type": "string"
+    },
+    "Buyer_phoneNumber": {
+      "type": "string"
+    }
+  }
+}
